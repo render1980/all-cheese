@@ -1,16 +1,28 @@
 # all_cheese
 
-A new Flutter project.
+Digital version of the original 'Alles käse' card board game.
 
-## Getting Started
+## Prerequisites for development
 
-This project is a starting point for a Flutter application.
+[Flutter](https://docs.flutter.dev/get-started/install)
 
-A few resources to get you started if this is your first Flutter project:
+## Build
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+flutter pub get
+flutter pub run build_runner build
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Run and connect to Android emulator
+
+```
+flutter emulators --launch Medium_Phone_API_36.0
+flutter run --debug
+```
+
+## Run and connect to Chrome
+
+```
+flutter build web
+flutter run -d chrome
+```
